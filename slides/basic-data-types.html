@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>basic data types</title>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Basic Data Types</h1>
+        <h3>CS161</h3>
+      </section>
+      <section>
+        <section>
+          <h2>Integers</h2>
+          <h3>The <code>int</code> type</h3>
+        </section>
+        <section>
+          <ul>
+            <li>Represent &ldquo;whole&rdquo; numbers
+              <ul>
+                <li class="fragment">On most systems are either 32- or 64-bits
+                  <ul>
+                    <li class="fragment">0 to 4,294,967,296</li>
+                    <li class="fragment">&minus;2,147,483,648 to &plus;2,147,483,647</li>
+                    <li class="fragment">0 to 18,446,744,073,709,551,616</li>
+                    <li class="fragment">&minus;9,223,372,036,854,775,808 to &plus;9,223,372,036,854,775,807</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="fragment">Python has no such limit.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Integer Demo 1</h2>
+        </section>
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Prefix</th>
+                <th>Interpretation</th>
+                <th>Base</th>
+              </tr>
+            </thead>
+            <tr>
+              <td><code>0b<br>0B</code></td>
+              <td>Binary</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><code>0o<br>0O</code></td>
+              <td>Octal</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td><code>0x<br>0X</code></td>
+              <td>Hexadecimal</td>
+              <td>16</td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h2>Integer Demo 2</h2>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Floating-Point Numbers</h2>
+          <h3>The <code>float</code> type</h3>
+        </section>
+        <section>
+          <ul>
+            <li>Represent numbers with a decimal point</li>
+            <li class="fragment">Optionally, the character <code>e</code> or <code>E</code> followed by a positive or
+              negative integer may be appended to specify scientific notation</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Complex Numbers</h2>
+          <h3>The <code>complex</code> type</h3>
+        </section>
+        <section>
+          <p>Yes, Python comes with a complex number type out of the box</p>
+          <p>
+            <pre><code class="python" data-trim>
+&gt;&gt;&gt; 2+3j
+(2+3j)
+
+&gt;&gt;&gt; type(2+3j)
+&lt;c1ass 'complex'&gt;</code></pre>
+          </p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Strings</h2>
+          <h3>The <code>str</code> type</h3>
+        </section>
+        <section>
+          <ul>
+            <li>Strings are sequences of character data</li>
+            <li class="fragment">String literals may be delimited using either single or double quotes
+              <p>
+                <pre><code class="python" data-trim>
+&gt;&gt;&gt; print("I am a string.")
+I am a string.
+&gt;&gt;&gt; type("I am a string.")
+&lt;class 'str'&gt;</code></pre>
+              </p>
+              <p>
+                <pre><code class="python" data-trim>
+&gt;&gt;&gt; print('I am too.')
+I am too.
+&gt;&gt;&gt; type('I am too.')
+&lt;class 'str'&gt;</code></pre>
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </div>
+  </div>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [{
+          src: 'plugin/markdown/marked.js'
+        },
+        {
+          src: 'plugin/markdown/markdown.js'
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+
+  </script>
+</body>
+
+</html>
