@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>in-class-assignments</title>
+  <title>CS160 Python</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
   <link rel="stylesheet" href="css/reveal.css">
@@ -35,10 +35,159 @@
       </section>
       <section>
         <section>
-          <h2>Stuff</h2>
+          <h2>Your First Python Program</h2>
         </section>
-        <section data-background="https://media.giphy.com/media/Yl5aO3gdVfsQ0/giphy.gif" data-background-color="#000000">
-          <p>stuff under stuff</p>
+        <section>
+          <ol>
+            <li class="fragment fade-in-then-semi-out">Using the interactive window, display some text on the screen by
+              using the print()
+              function.</li>
+            <li class="fragment fade-in-then-semi-out">Using the interactive window, display a string of text by saving
+              the
+              string to a variable, then reference the string in a print() function
+              using the variable name.</li>
+            <li class="fragment fade-in-then-semi-out">Repeat the exercises above by first saving your code in a script
+              files (one for each)
+              and running them.</li>
+          </ol>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Strings and Methods</h2>
+        </section>
+        <section>
+          <ol>
+            <li class="fragment fade-in-then-semi-out">Print a string that uses double quotation marks inside the
+              string.</li>
+            <li class="fragment fade-in-then-semi-out">Print a string that uses an apostrophe inside the string.</li>
+            <li class="fragment fade-in-then-semi-out">Print a string that spans multiple lines, with whitespace
+              preserved.</li>
+            <li class="fragment fade-in-then-semi-out">Print a one-line string that you have written out on multiple
+              lines.</li>
+          </ol>
+        </section>
+        <section>
+          <ol>
+            <li class="fragment fade-in-then-semi-out">Create a string and print its length using the <code>len()</code>
+              function.</li>
+            <li class="fragment fade-in-then-semi-out">Create two strings, concatenate them, and print the resulting
+              string.</li>
+            <li class="fragment fade-in-then-semi-out">Create two string variables, then print one of them after the
+              other (with a space added in between) using a comma in your <code>print</code> statement.</li>
+            <li class="fragment fade-in-then-semi-out">Repeat exercise 3, but instead of using commas in <code>print()</code>,
+              use concatenation to add a space between the two strings.</li>
+          </ol>
+        </section>
+        <section>
+          <ol start="5">
+            <li class="fade-in-then-semi-out">Print the string <code>"zing"</code> by using subscripts and index
+              numbers
+              on the string <code>"bazinga"</code> to specify the correct range of characters.</li>
+          </ol>
+        </section>
+        <section>
+          <ol>
+            <li class="fragment fade-in-then-semi-out">Write a script that converts the following strings to lowercase:
+              <code>"Animals"</code>, <code>"Badger"</code>, <code>"Honey Bee"</code>, <code>"Honeybadger"</code>.
+              Print each lowercase string.</li>
+            <li class="fragment fade-in-then-semi-out">Repeat Exercise 1, but convert each string to uppercase instead
+              of lowercase.</li>
+            <li class="fragment fade-in-then-semi-out">Write a script that removes whitespace from the following
+              strings:
+              <pre><code class="hljs" data-trim contenteditable>
+string1 = " Filet Mignon"
+string2 = "Brisket "
+string3 = " Cheeseburger "
+              </code></pre>
+              Print out the strings with the whitespace removed.</li>
+          </ol>
+        </section>
+        <section>
+          <ol start="4">
+            <li class="fade-in-then-semi-out">Write a script that prints out the result of <code>.startswith("be")</code>
+              on each
+              of the following strings:</li>
+            <pre><code class="hljs" data-trim contenteditable>
+string1 = "Becomes"
+string2 = "becomes"
+string3 = "BEAR"
+string4 = " bEautiful"
+              </code></pre>
+            <li class="fragment fade-in-then-semi-out">Using the same four strings from Exercise 4, write a script
+              that uses string methods to alter each string so that <code>.startswith("be")</code> returns True
+              for all of them.</li>
+          </ol>
+        </section>
+        <section>
+          <ol>
+            <li class="fragment fade-in-then-semi-out">Write a script that takes input from the user and displays that
+              input back.</li>
+            <li class="fragment fade-in-then-semi-out">Write a script that takes input from the user and display the
+              input in lowercase.</li>
+            <li class="fragment fade-in-then-semi-out">Write a script that takes input from the user and displays the
+              number of characters inputted.</li>
+          </ol>
+        </section>
+        <section>
+          <h3>Challenge:</h3>
+          <div style="margin:0;font-size: 80%;">
+            <p>
+              Write a script named first_letter.py that first prompts the user for
+              input by using the string: Tell me your password: The script should
+              then determine the first letter of the user’s input, convert that letter
+              to upper-case, and display it back.
+            </p>
+            <p>
+              For example, if the user input is <code>"no"</code> then the program should respond
+              like this:
+            </p>
+            <p><code>The first letter you entered was: N</code></p>
+            <p>For now, it’s okay if your program crashes when the user enters nothing
+              as input&ndash;that is, they just hit <code>Enter</code> instead of typing something in.
+              You’ll learn about a couple of ways you can deal with this situation in the future.</p>
+          </div>
+        </section>
+        <section>
+          <ol>
+            <li class="fragment fade-in-then-semi-out">Create a string containing an integer, then convert that string
+              into
+              an actual integer object using <code>int()</code>. Test that your new object is
+              a number by multiplying it by another number and displaying the
+              result.</li>
+            <li class="fragment fade-in-then-semi-out">Repeat the previous exercise, but use a floating-point number
+              and
+              <code>float()</code>.</li>
+            <li class="fragment fade-in-then-semi-out">Create a string object and an integer object, then display them
+              sideby-
+              side with a single print statement by using the <code>str()</code> function.</li>
+          </ol>
+        </section>
+        <section>
+          <ol start="4">
+            <li class="fade-in-then-semi-out">Write a script that gets two numbers from the user using the
+              <code>input()</code> function twice, multiplies the numbers together, and
+              displays the result. If the user enters 2 and 4, your output should
+              look like:
+              <p>
+                <code>The product of 2 and 4 is 8.0.</code>
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section>
+          <ol>
+            <li class="fragment fade-in-ten-semi-out">Create a <code>float</code> object named weight with the value
+              <code>0.2</code>, and create
+              a string object named <code>animal</code> with the value <code>"newt"</code>. Then use these
+              objects to print the following string using only string concatenation:
+              <p><code>0.2 kg is the weight of the newt.</code></p>
+            </li>
+            <li class="fragment fade-in-ten-semi-out">Display the same string by using the <code>.format()</code>
+              method and empty
+              <code>{}</code> place-holders.</li>
+            <li class="fragment fade-in-ten-semi-out">Display the same string using an f-string.</li>
+          </ol>
         </section>
       </section>
     </div>
